@@ -1,22 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding and language of the document -->
     <meta charset="UTF-8">
+    
+    <!-- Ensures the webpage is responsive and scales well on different screen sizes -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage, displayed in the browser tab -->
     <title>Weather Forecast</title>
+
+    <!-- Link to external stylesheet for custom styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Main container for the weather app -->
     <div class="weather-app">
+        <!-- Page header with the title "Weather Forecast" -->
         <h1>Weather Forecast</h1>
+
+        <!-- Input field for the user to enter a city name -->
         <input type="text" id="city" placeholder="Enter city">
+
+        <!-- Button to trigger the weather fetch when clicked -->
         <button onclick="getWeather()">Get Weather</button>
+
+        <!-- Section where the weather information will be displayed -->
         <div id="weather-info">
+            <!-- Placeholder for displaying the city name -->
             <h2 id="location"></h2>
+
+            <!-- Placeholder for displaying current weather details -->
             <div id="current-weather"></div>
+
+            <!-- Placeholder for displaying the 5-day forecast -->
             <div id="forecast"></div>
         </div>
     </div>
+
+    <!-- Link to the external JavaScript file containing the weather app functionality -->
     <script src="script.js"></script>
 </body>
 </html>

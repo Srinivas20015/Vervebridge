@@ -1,68 +1,79 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+/* Set general font and background for the whole page */
+body { 
+    font-family: Arial, sans-serif; /* Use Arial or a sans-serif fallback */
+    background-color: #f0f0f0; /* Light gray background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Style the main weather app container */
 .weather-app {
-    background-color: #5d99d5;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 20px auto;
+    background-color: #5d99d5; /* Light blue background for the weather app */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 10px; /* Round the corners of the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a light shadow around the container */
+    max-width: 800px; /* Set maximum width */
+    margin: 20px auto; /* Center the container with margin */
 }
 
+/* Center-align the h1 and h2 headings */
 h1, h2 {
     text-align: center;
 }
 
+/* Style the input field for entering the city */
 #city {
-    padding: 10px;
-    width: calc(100% - 22px); /* Full width with some padding */
-    margin-bottom: 10px;
+    padding: 10px; /* Add padding inside the input field */
+    width: calc(100% - 22px); /* Make the input field take full width minus some padding */
+    margin-bottom: 10px; /* Add space below the input field */
 }
 
+/* Style the button for fetching the weather */
 button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: block;
-    margin: 10px auto;
+    padding: 10px 20px; /* Add padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly round the button edges */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    display: block; /* Make the button block-level for better centering */
+    margin: 10px auto; /* Center the button */
 }
 
+/* Change the button's background color on hover */
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue when hovered */
 }
 
+/* Add margin to the weather information container */
 #weather-info {
     margin-top: 20px;
 }
 
+/* Add margin and center-align text in current weather and forecast sections */
 #current-weather, #forecast {
     margin-top: 10px;
-    text-align: center; /* Align text to the left */
+    text-align: center; /* Center-align text */
 }
 
+/* Style the current weather icon */
 #current-weather img {
-    vertical-align: center;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
+    vertical-align: center; /* Center the image vertically */
+    width: 50px; /* Set fixed width */
+    height: 50px; /* Set fixed height */
 }
 
+/* Style individual forecast items in a flex layout */
 .forecast-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 0;
-    border-bottom: 1px solid #ddd;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space evenly between items */
+    padding: 5px 0; /* Add padding to the top and bottom of each forecast item */
+    border-bottom: 1px solid #ddd; /* Add a light gray border between items */
 }
 
+/* Style the forecast icons */
 .forecast-item img {
-    vertical-align: middle;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
+    vertical-align: middle; /* Align icon in the middle vertically */
+    width: 50px; /* Set fixed width */
+    height: 50px; /* Set fixed height */
 }
